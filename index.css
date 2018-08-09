@@ -8,12 +8,6 @@
     65%  { transform: translate(0, -15px); }
     to   { transform: translate(0, -0px); }    
     }
-    .three-images img{
-        position: relative;
-        top:3rem;
-        transition: width 1s, height 1s, top 1s, left 1s;
-        float:left;
-    }
     .left-img{
         width:15%;
         opacity: 0.7;
@@ -21,6 +15,10 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+        position: relative;
+        top:3rem;
+        transition: width 1s, height 1s, top 1s, left 1s;
+        float:left;
     }
     .right-img{
         width:15%;
@@ -29,6 +27,10 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+        position: relative;
+        top:3rem;
+        transition: width 1s, height 1s, top 1s, left 1s;
+        float:left;
     }
     .middle-img{
         width:48%;
@@ -38,9 +40,23 @@
         animation-timing-function: ease-in-out;
         box-shadow: 10px 0px 5px grey;
         border-radius: 1rem;
+        position: relative;
+        top:3rem;
+        transition: width 1s, height 1s, top 1s, left 1s;
+        float:left;
     }
 
-
+    .text-div{
+        width: 70%;
+        animation-name: floating1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        position: relative;
+        top:3rem;
+        transition: width 1s, height 1s, top 1s, left 1s;
+        float:left;
+    }
     .cid-qZAxRqq0kj P {
     text-align: left!important;
 }
