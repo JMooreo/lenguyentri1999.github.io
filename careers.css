@@ -27,11 +27,11 @@
       }
     }
   }
-/*  .carouse-control{
+  .carouse-control{
     &.left, &.right{
       background-image: none;
     }
-  }*/
+  }
 }
 .carousel-control.left {
   background-image: none !important;
@@ -42,7 +42,7 @@
 /*body{
   background: #333;
   color: #ddd;
-}*/
+}
 /*h1{
   color: white;
   font-size: 2.25em;
@@ -61,4 +61,11 @@
 
 .font-thing{
   font-size: 1.8rem;
+}*/
+
+a{
+  font-family: 'Comfortaa' !important;
+}
+.comfort{
+  font-family: 'Comfortaa' !important;
 }

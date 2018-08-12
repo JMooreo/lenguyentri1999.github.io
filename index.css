@@ -8,6 +8,23 @@
     65%  { transform: translate(0, -15px); }
     to   { transform: translate(0, -0px); }    
     }
+    .catch-phrase{
+        font-family: 'Comfortaa'!important;
+        font-size: 3rem;
+        color: gray;
+        }
+     .switch-text{
+         color:#F57C00 !important;
+    }
+    a{
+        font-family: 'Comfortaa'!important;
+    }
+    p{
+         font-family: 'Comfortaa'!important;
+    }
+    .comfort{
+        font-family: 'Comfortaa'!important;
+    }
     .left-img{
         width:15%;
         opacity: 0.7;
@@ -19,6 +36,7 @@
         top:3rem;
         transition: width 1s, height 1s, top 1s, left 1s;
         float:left;
+        border-radius: 1rem;
     }
     .right-img{
         width:15%;
@@ -31,6 +49,7 @@
         top:3rem;
         transition: width 1s, height 1s, top 1s, left 1s;
         float:left;
+        border-radius: 1rem;
     }
     .middle-img{
         width:48%;
@@ -38,7 +57,9 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-        box-shadow: 10px 0px 5px grey;
+         -webkit-box-shadow: 1px 1px 5px 6px #ccc;  /* Safari 1-4, iOS 4.0.2 - 4.2, Android 2.1+ */
+  -moz-box-shadow:    1px 1px 5px 6px #ccc;  /* Firefox 1.5 - 1.6 */
+  box-shadow:         1px 1px 5px 6px #ccc;  
         border-radius: 1rem;
         position: relative;
         top:3rem;
@@ -47,7 +68,7 @@
     }
 
     .text-div{
-        width: 70%;
+/*        width: 70%;*/
         animation-name: floating1;
         animation-duration: 3s;
         animation-iteration-count: infinite;
