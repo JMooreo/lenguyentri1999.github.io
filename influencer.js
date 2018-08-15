@@ -45,6 +45,7 @@ var strings = ["assets/influencerimgs/exptext1.png","assets/influencerimgs/expte
 var phone_slides2 = ["second-img1","first-img1","third-img1"];
 var strings1 = ["assets/influencerimgs/detailtxt1.png","assets/influencerimgs/detailtxt2.png","assets/influencerimgs/detailtxt3.png"]
     function goForward1(img){
+        console.log(img)
           if(img == phone_slides2[1]){ //if it's the bigger image, do nothing
             return
         }
@@ -72,14 +73,14 @@ var strings1 = ["assets/influencerimgs/detailtxt1.png","assets/influencerimgs/de
                 phone_slides2[2] = middle;
             }
         if(img == "second-img1"){
-             document.getElementById('phone-text1').src = strings1[1];
+             document.getElementById('phone-text1').src = strings1[2];
 
         }
         else if(img == "first-img1"){
             document.getElementById('phone-text1').src = strings1[0];
         }
         else if(img == "third-img1"){
-            document.getElementById('phone-text1').src = strings1[2];
+            document.getElementById('phone-text1').src = strings1[1];
         }
         }
     }
