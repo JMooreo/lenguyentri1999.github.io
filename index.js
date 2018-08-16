@@ -30,18 +30,59 @@ var strings = ["assets/images/firsttext.png","assets/images/secondtext.png","ass
                 phone_slides[2] = middle;
             }
         if(img == "second-img"){
-             document.getElementById('phone-text').src = strings[1];
+             document.getElementById('phone-text').src = strings[0];
 
         }
         else if(img == "first-img"){
-            document.getElementById('phone-text').src = strings[0];
+            document.getElementById('phone-text').src = strings[1];
         }
         else if(img == "third-img"){
             document.getElementById('phone-text').src = strings[2];
         }
         }
     }
+var phone_slides2 = ["second-img1","first-img1","third-img1"];
+var strings1 = ["assets/indeximg/sectxt1.png","assets/indeximg/sectxt2.png","assets/indeximg/sectxt3.png"]
+    function goForward1(img){
+        console.log(img)
+          if(img == phone_slides2[1]){ //if it's the bigger image, do nothing
+            return
+        }
+        else{
+            if(img == phone_slides2[2]){ //if clicked on the right side image
+                document.getElementById(phone_slides2[1]).className = "left-img";
+                document.getElementById(phone_slides2[2]).className = "middle-img";
+                document.getElementById(phone_slides2[0]).className = "right-img";
+                middle = phone_slides2[1];
+                right = phone_slides2[2];
+                left = phone_slides2[0];
+                phone_slides2[1] = right;
+                phone_slides2[0] = middle;
+                phone_slides2[2] = left;
+            }
+            else{ //if left side image 
+                document.getElementById(phone_slides2[1]).className = "right-img";
+                document.getElementById(phone_slides2[2]).className = "left-img";
+                document.getElementById(phone_slides2[0]).className = "middle-img";  
+                middle = phone_slides2[1];
+                right = phone_slides2[2];
+                left = phone_slides2[0];
+                phone_slides2[1] = left;
+                phone_slides2[0] = right;
+                phone_slides2[2] = middle;
+            }
+        if(img == "second-img1"){
+             document.getElementById('phone-text1').src = strings1[2];
 
+        }
+        else if(img == "first-img1"){
+            document.getElementById('phone-text1').src = strings1[0];
+        }
+        else if(img == "third-img1"){
+            document.getElementById('phone-text1').src = strings1[1];
+        }
+        }
+    }
 
 // var words_switch = ["resources","events","place"];
 // var loop_count = 0;
