@@ -1,7 +1,9 @@
 
 //FOR LOOPING THROUGH PHONE IMAGES AND STUFF
 var phone_slides = ["second-img","first-img","third-img"];
-var strings = ["assets/influencerimgs/exptext1.png","assets/influencerimgs/exptext2.png","assets/influencerimgs/exptext3.png"]
+var strings = ["These are fan-created experiences that can be joined by others alike.",
+"This is where fans create experiences.",
+"This is an experience; attendees can get direction and confirm their attendance."]
     function goForward(img){
         if(img == phone_slides[1]){ //if it's the bigger image, do nothing
             return
@@ -30,20 +32,22 @@ var strings = ["assets/influencerimgs/exptext1.png","assets/influencerimgs/expte
                 phone_slides[2] = middle;
             }
         if(img == "second-img"){
-             document.getElementById('phone-text').src = strings[1];
+             document.getElementById('phone-text').innerHTML = strings[1];
 
         }
         else if(img == "first-img"){
-            document.getElementById('phone-text').src = strings[0];
+            document.getElementById('phone-text').innerHTML = strings[0];
         }
         else if(img == "third-img"){
-            document.getElementById('phone-text').src = strings[2];
+            document.getElementById('phone-text').innerHTML = strings[2];
         }
         }
     }
-
 var phone_slides2 = ["second-img1","first-img1","third-img1"];
-var strings1 = ["assets/influencerimgs/detailtxt1.png","assets/influencerimgs/detailtxt2.png","assets/influencerimgs/detailtxt3.png"]
+var strings1 = ["Post events, meets, greets and more",
+"Let fans send feedback to improve your content",
+"Sell merchs and any sponsored products you choose",
+]
     function goForward1(img){
         console.log(img)
           if(img == phone_slides2[1]){ //if it's the bigger image, do nothing
@@ -73,14 +77,14 @@ var strings1 = ["assets/influencerimgs/detailtxt1.png","assets/influencerimgs/de
                 phone_slides2[2] = middle;
             }
         if(img == "second-img1"){
-             document.getElementById('phone-text1').src = strings1[2];
+             document.getElementById('phone-text1').innerHTML = strings1[2];
 
         }
         else if(img == "first-img1"){
-            document.getElementById('phone-text1').src = strings1[0];
+            document.getElementById('phone-text1').innerHTML = strings1[0];
         }
         else if(img == "third-img1"){
-            document.getElementById('phone-text1').src = strings1[1];
+            document.getElementById('phone-text1').innerHTML = strings1[1];
         }
         }
     }
@@ -123,7 +127,7 @@ function switchWords(index, words, target) {
         switchWords(index, words, target);
     }, 3000);
 }
-words = ["content","shoutouts","merch"];
+words = ["content","shoutouts","merchs"];
 index = 0;
 target = "text-switch";
 switchWords(index,words,target);
