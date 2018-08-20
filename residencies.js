@@ -1,8 +1,8 @@
 
 //FOR LOOPING THROUGH PHONE IMAGES AND STUFF
 var phone_slides = ["second-img","first-img","third-img"];
-var strings = ["Members can create their own mini events and post it to the community",
-"Let memebers create their own mini events.",
+var strings = ["Residents can create their own mini events and host it to the community",
+"This is where residents create experiences.",
 "This is an experience; attendees can get direction and confirm their attendance."]
     function goForward(img){
         if(img == phone_slides[1]){ //if it's the bigger image, do nothing
@@ -44,9 +44,9 @@ var strings = ["Members can create their own mini events and post it to the comm
         }
     }
 var phone_slides2 = ["second-img1","first-img1","third-img1"];
-var strings1 = ["Post events, news and they will be send to your members as push notifications",
-"Get out of email clutter by allowing members to send personal, casual or private feedback to you in the app.",
-"Marketplace, where members can buy and sell products to each other.",
+var strings1 = ["Post events, surveys and send out push notifications via app.",
+"Let residents send feedback to improve your building.",
+"Allow residents to sell their belongings to each other(move-out sells).",
 ]
     function goForward1(img){
         console.log(img)
@@ -127,7 +127,7 @@ function switchWords(index, words, target) {
         switchWords(index, words, target);
     }, 3000);
 }
-words = ["places","resources","events"];
+words = ["amenities","rooms","coffee"];
 index = 0;
 target = "text-switch";
 switchWords(index,words,target);
