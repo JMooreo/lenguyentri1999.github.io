@@ -1,7 +1,7 @@
 
 //FOR LOOPING THROUGH PHONE IMAGES AND STUFF
 var phone_slides = ["second-img","first-img","third-img"];
-var strings = ["Members can create their own mini events and post it to the community",
+var strings = ["Freshmen can create their own mini events and post it to their floor",
 "Creating an experience is less than 5 seconds.",
 "always have all the details and information you need to join the experience."]
     function goForward(img){
@@ -44,9 +44,9 @@ var strings = ["Members can create their own mini events and post it to the comm
         }
     }
 var phone_slides2 = ["second-img1","first-img1","third-img1"];
-var strings1 = ["Post events, news and they will be send to your members as push notifications",
-"Get out of email clutter by allowing members to send personal, casual or private feedback to you in the app.",
-"Marketplace, where members can buy and sell products to each other.",
+var strings1 = ["Post events, news and they will be sent to the freshmen on the floor as push notifications.",
+"Get out of email clutter by allowing freshmen to send personal, casual or private feedback to you in the app.",
+"Marketplace, where freshmen can buy and sell products to each other, perfect for move-in, move-out day.",
 ]
     function goForward1(img){
         console.log(img)
@@ -127,7 +127,7 @@ function switchWords(index, words, target) {
         switchWords(index, words, target);
     }, 3000);
 }
-words = ["places","resources","events"];
+words = ["leases","amenities","events"];
 index = 0;
 target = "text-switch";
 switchWords(index,words,target);

@@ -1,7 +1,7 @@
 
 //FOR LOOPING THROUGH PHONE IMAGES AND STUFF
 var phone_slides = ["second-img","first-img","third-img"];
-var strings = ["Residents can create their own mini events and host it to the community",
+var strings = ["Residents can create their own mini events and host it to the community.",
 "This is where residents create experiences.",
 "This is an experience; attendees can get direction and confirm their attendance."]
     function goForward(img){
@@ -127,7 +127,7 @@ function switchWords(index, words, target) {
         switchWords(index, words, target);
     }, 3000);
 }
-words = ["amenities","rooms","coffee"];
+words = ['leases',"amenities","coffee"];
 index = 0;
 target = "text-switch";
 switchWords(index,words,target);
